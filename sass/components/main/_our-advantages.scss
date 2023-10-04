@@ -1,0 +1,28 @@
+.advantages {
+    @extend %disp-agile;
+
+    
+    .advantages__picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F5F4FA;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        background-position: center;
+    }
+
+    .advantages__title {
+        @extend %h-three;
+    }
+    .advantages__text {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+.advantages .item + .item {
+    margin-left: 30px;
+}

@@ -1,0 +1,25 @@
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    margin-right: 0;
+    width: 231px;
+    font-style: normal;
+
+    .footer-contacts__item {
+        color: rgba(255, 255, 255, 0.6);
+        font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: left;
+        text-decoration: none;
+
+        &--white {
+            color: $primary-background-white;
+        }
+    }
+    .footer-contacts__item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}

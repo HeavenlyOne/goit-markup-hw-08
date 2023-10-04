@@ -1,0 +1,59 @@
+.header-contacts {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    
+    
+    .header-contacts__item {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        color: currentColor;
+    
+        transition: color 250ms $transicion-timing;
+
+        .header-contacts__link {
+                margin-left: 10px;
+                color: currentColor;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.14;
+                letter-spacing: 0.02em;
+                text-align: left;
+            
+            }
+        
+        
+        .header-contacts__icon {
+            display: inline-block;
+            fill: currentColor;
+        
+        }
+
+    }
+}
+
+.header-contacts .item + .item {
+    margin-left: 40px;
+}
+
+.header-contacts__item:hover {
+    cursor: pointer;
+    color: $accent-color;
+}
+    
+    
+.header-contacts__item:focus {
+    color: $accent-color;
+}
+    
+.header-contacts__item:focus-within {
+    color: $accent-color;
+} 
+
+
+
+

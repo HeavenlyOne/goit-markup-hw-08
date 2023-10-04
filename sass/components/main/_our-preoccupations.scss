@@ -1,0 +1,29 @@
+.preoccupations {
+    @extend %disp-agile;
+    @extend %work-pad;
+
+    .preoccupations__item {
+        position: relative;
+    }
+
+    .preoccupations__text {
+        display: flex;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(47, 48, 58, 0.8);
+
+        font-family: Roboto;
+        color: $primary-background-white;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

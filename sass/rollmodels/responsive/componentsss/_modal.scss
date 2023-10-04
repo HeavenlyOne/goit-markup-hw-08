@@ -1,0 +1,27 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    padding: 50px 30px;
+    overflow-y: scroll;
+}
+.backdrop.is-hidden {
+    display: none;
+}
+.modal {
+    padding: 20px;
+    background-color: #fff;
+
+    @media (min-width: $tablet) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 500px;
+        width: 100%;
+    }
+}

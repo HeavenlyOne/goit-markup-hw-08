@@ -1,0 +1,48 @@
+.conteiner-cliets {
+    padding: 94px 0;
+}
+
+.clients {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-left: 0;
+    justify-content: center;
+
+    .clients__item {
+        width: 170px;
+        height: 92px;
+
+        .clients__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $icon-color;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $icon-color;
+            border-radius: 4px;
+    
+            transition: color 250ms $transicion-timing, border-color 250ms $transicion-timing;
+
+            &:hover {
+                color: $accent-color;
+                border-color: $accent-color;
+            }
+            &:focus {
+                color: $accent-color;
+            }
+        }
+        .clients__icon {
+            width: 106px;
+            height: 60px;
+            fill: currentColor;
+        }
+
+    
+
+    }
+    .clients__item:not(:first-child) {
+        margin-left: 30px;
+    }   
+}

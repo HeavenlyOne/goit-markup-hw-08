@@ -1,0 +1,20 @@
+.rewies {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.rewies-set {
+    @extend %list;
+    display: flex;
+}
+.rewies-item {
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    font-size: 48px;
+    width: calc(100% / 3);
+}
+
+$colors: "#795548", "#607D8B", "#781Fa2";
+
+@include colorize($colors, ".rewies-item");
