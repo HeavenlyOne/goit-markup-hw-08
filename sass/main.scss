@@ -1,7 +1,7 @@
 @import "./utils/variables";
 @import "./utils/normalize";
-@import "./utils/base";
 @import "./utils/placeholder";
+@import "./utils/base";
 
 @import "./components/header/header";
 @import "./components/logo";
@@ -9,18 +9,4 @@
 @import "./components/header/header-contacts";
 
 @import "./components/main/hero";
-@import "./components/main/our-advantages";
-@import "./components/main/our-preoccupations";
-@import "./components/main/our-team";
-@import "./components/main/clients";
-
-@import "./components/footer/footer";
-@import "./components/footer/footer-contacts";
-@import "./components/footer/footer-join-us";
-@import "./components/footer/footer-sign-up";
-
 @import "./components/main/modal-window";
-
-@import "./components/portfolio/portfolio-stage";
-@import "./components/portfolio/filter";
-@import "./components/portfolio/card-set";

@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms $transicion-timing;
@@ -17,8 +17,8 @@
 
 .modal-window {
     position: absolute;
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     left: 50%;
     top: 50%;
     color: $primary-title-textcolor;
@@ -30,6 +30,10 @@
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
+    @media screen and (min-width: 768px) {
+        min-width: 528px;
+        min-height: 581px;
+    }
     .modal-window__crest-button {
         position: absolute;
         height: 30px;
@@ -50,7 +54,6 @@
     }
 
 }
-
 .modal.is-hidden .modal-window {
     transform: translate(-50%, -50%) scale(0.8) rotate(180deg);
 }
@@ -58,21 +61,29 @@
 .modal-window__paddings {
     padding: 40px;
 }
+
 .modal-window__title {
     @extend .h-two;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     margin: 0;
     margin-bottom: 12px;
     padding: 0;
+    @media screen and (min-width: 768px) {
+        line-height: 1.15;
+    }
 }
+
 .modal-window__form {
-    width: 448px;
+    width: 370px;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 768px) {
+        width: 448px;
+    }
 
     .modal-window__label {
         position: relative;
@@ -90,57 +101,76 @@
             margin-bottom: 4px;
             color: $text-color;
         }
+
+
         .modal-window__input {
             display: inline-block;
-            width: 448px;
+            width: 370px;
             height: 40px;
             padding-left: 42px;
             border: 1px solid #21212133;
             border-radius: 4px;
             outline: none;
-        
+            @media screen and (min-width: 768px) {
+                width: 448px;
+            }
+
             &:focus-within+.modal-window__icon {
                 color: $accent-color;
             }
-            
+
             &:focus-within {
                 border-color: $accent-color;
                 outline: $accent-color;
             }
         }
+
         .modal-window__icon {
             position: absolute;
             left: 12px;
             bottom: 11px;
             fill: currentColor;
         }
+
         textarea.modal-window__input {
             resize: none;
             height: 120px;
             padding: 12px 16px;
         }
-    
+
         textarea.modal-window__input::placeholder {
             color: #75757580;
-    
-            font-size: 12px;
+
+            font-size: 14px;
             font-weight: 400;
-            line-height: 1.16;
+            line-height: 1.14;
             letter-spacing: 0.01em;
+            @media screen and (min-width: 768px) {
+                font-size: 12px;
+                line-height: 1.16;
+            }
         }
     }
+
     .modal-window__label:nth-of-type(4) {
         margin-bottom: 20px;
     }
 }
+
 .modal-form {
     display: flex;
     align-items: center;
-    padding-left: 12px;
     margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.16;
     text-align: left;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.7;
+        padding-left: 12px;
+
+    }
+
 
     .modal-form__input {
         -webkit-appearance: none;
@@ -148,12 +178,14 @@
         appearance: none;
         position: absolute;
     }
+
     .modal-form__icon {
         display: inline-block;
         border: 2px solid $primary-title-textcolor;
         border-radius: 2px;
-        margin-right: 7px;
+        margin-right: 8px;
     }
+
     .modal-form__text {
         color: $text-color;
     }
@@ -163,14 +195,15 @@
         margin-left: 3px;
         text-decoration: underline;
     }
-    .modal-form__input:checked + .modal-form__icon {
+
+    .modal-form__input:checked+.modal-form__icon {
         border: 1px solid transparent;
         background-color: $accent-color;
         background-size: contain;
         background-origin: border-box;
     }
 
-    .modal-form__input:focus + .modal-form__icon {
+    .modal-form__input:focus+.modal-form__icon {
         outline: 2px solid $accent-color;
         border-color: transparent;
     }

@@ -29,6 +29,7 @@ p {
 }
 ul {
     list-style: none;
+    padding-left: 0;
 }
 a {
     text-decoration: none;
@@ -38,16 +39,28 @@ img {
     display: block;
     height: auto;
     max-width: 100%;
-}
+} 
+
 
 
 
 .conteiner {
-    width: 1200px;
+    // max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+
     /*    outline: 2px solid greenyellow;*/
 }
 
