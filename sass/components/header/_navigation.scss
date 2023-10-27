@@ -4,9 +4,11 @@
         padding-bottom: 48px;
         padding-right: 15px;
         padding-top: 10px;
+        // border: none;
+        // outline: none;
         
-        background-color: goldenrod;
-        // background-color: $primary-background-white;
+        // background-color: goldenrod;
+        background-color: $primary-background-white;
         
         display: none;
         position: absolute;
@@ -17,7 +19,11 @@
 
         &.is-open {
            display: block;
+           }
         }
+        // .mobile-menu__button {
+        //     margin-left: 385px;
+        // }
 
         .navigation__list {
             margin-bottom: 306px;
@@ -95,7 +101,7 @@
             }
         }
     }
-} 
+
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
     .navigation {
         display: flex;

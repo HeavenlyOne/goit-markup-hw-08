@@ -40,6 +40,22 @@
 
     }
     @media screen and (min-width: 1200px) {
+        width: 1200px;
+        // width: auto;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(to right, #2F303A66, #2F303A66), url(/images/desktop/Hero_1600x600.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, #2F303A66, #2F303A66), url(/images/desktop/Hero_1600x600@2x.webp);
+            }
+
+    }
+    @media screen and (min-width: 1600px) {
         width: 1600px;
         // width: auto;
         height: 600px;

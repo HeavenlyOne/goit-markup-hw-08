@@ -4,7 +4,7 @@
             padding-left: 0;
             margin-top: 0;
             margin-bottom: 0;
-            @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            @media screen and (min-width: 480px) and (max-width: 1199px) {
                 flex-direction: column;
             }
 

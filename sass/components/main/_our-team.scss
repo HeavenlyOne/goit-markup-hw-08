@@ -3,19 +3,49 @@
 }
 
 .team__conteiner {
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     padding-top: 94px;
+    padding-bottom: 94px;
+    
+    .h-two {
+        @extend .h-two;
+        @media screen and (max-width: 767px) {
+                font-size: 28px;
+                line-height: 1.18; 
+        }
+    }
 
 }
 
 .team {
-    @extend %disp-agile;
-    @extend %work-pad;
+    // @extend %disp-agile;
+    // @extend %work-pad;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
 
 
 }
 
 .team-card {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
 
     border-radius: 0px 0px 4px 4px;
 
@@ -24,6 +54,30 @@
     box-shadow: 0px 2px 1px 0px #00000033,
         0px 1px 1px 0px #00000024,
         0px 1px 3px 0px #0000001F;
+    @media screen and (max-width: 479px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        margin: 0 15px;
+        width: calc((100% - 2 * 30px) / 2);
+        padding-bottom: 24px;
+        &:nth-child(-n + 2) {
+            margin-bottom: 30px;
+        }
+
+    }
+    @media screen and (min-width: 768px) {
+        margin: 0 15px;
+        width: calc((100% - 4 * 30px) / 4);
+        padding-bottom: 30px;
+    }
+
+    
+    
 
     .team-card__title {
         display: block;
