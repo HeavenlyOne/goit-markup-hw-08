@@ -1,6 +1,6 @@
 
 .preoccupations__title {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         height: 1px;
         width: 1px;
         position: absolute;
@@ -11,11 +11,15 @@
         overflow: hidden;
     }
 }
-
-.preoccupations {
-    @media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
+    .preoccupations {
         display: none;
     }
+}
+.preoccupations {
+    // @media screen and (max-width: 1199x) {
+    //     display: none;
+    // }
 
     @extend %disp-agile;
     @extend %work-pad;

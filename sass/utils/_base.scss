@@ -17,6 +17,9 @@ body {
     letter-spacing: 0.03em;
     margin: 0;
 }
+// body.data-modal-open {
+//     overflow: hidden;
+// }
 
 h1,
 h2,
@@ -45,13 +48,15 @@ img {
 
 
 .conteiner {
-    width: 480px;
+    // width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
-
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    } 
 
     @media screen and (min-width: 768px) {
         width: 768px;
