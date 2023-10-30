@@ -12,37 +12,62 @@
 <body>
     <header class="conteiner page-header page-header--lined">
         <nav class="navigation">
-            <a href="./index.html" class="logo page-header__logo"><span class="logo__accent">Web</span>Studio</a>
-            <ul class="navigation__list">
-                <li class="item">
-                    <a href="./index.html" class="navigation__link">Студія</a>
-                </li>
-                <li class="item">
-                    <a href="./portfolio.html" class="navigation__link navigation__current-page">Портфоліо</a>
-                </li>
-                <li class="item">
-                    <a href="" class="navigation__link">Контакти</a>
-                </li>
-            </ul>
+            <div class="mobile-container">
+                <a href="./index.html" class="logo page-header__logo"><span class="logo__accent">Web</span>Studio</a>
+                <button type="button" class="mobile-menu__button is-open" data-menu-button aria-controls="menu-container"
+                    aria-expanded="false">
+                    <svg width="24" height="16" aria-label="mobile menu switch">
+                        <use class="icon-cross" href="./images/mobile_menu_crest.svg#menu_24px"></use>
+                        <use class="icon-menu" href="./images/mobile_menu_crest.svg#mobile_close_24px"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-navigation" id="menu-container" data-menu>
+                <!-- <button type="button" class="mobile-menu__button is-open" data-menu-button aria-controls="menu-container"
+                        aria-expanded="false">
+                        <svg width="24" height="16" aria-label="mobile menu switch">
+                            <use class="icon-cross" href="./images/mobile_menu_crest.svg#mobile_close_24px"></use>
+                        </svg>
+                    </button> -->
+                <ul class="navigation__list">
+                    <li class="item">
+                        <a href="./index.html" class="navigation__link">Студія</a>
+                    </li>
+                    <li class="item">
+                        <a href="./portfolio.html" class="navigation__link navigation__current-page">Портфоліо</a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="navigation__link">Контакти</a>
+                    </li>
+                </ul>
+                <ul class="header-contacts">
+                    <li class="item">
+                        <div class="header-contacts__item">
+                            <svg class="header-contacts__icon" width="16" height="12">
+                                <use href="./images/contacts.svg#envelope"></use>
+                            </svg>
+                            <a href="mailto:info@devstudio.com" class="header-contacts__link">info@devstudio.com</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="header-contacts__item">
+                            <svg class="header-contacts__icon" width="10" height="16">
+                                <use href="./images/contacts.svg#smartphone"></use>
+                            </svg>
+                            <a href="tel:+380961111111" class="header-contacts__link">+38 096 111 11 11</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="menu-socials">
+                    <li class="item"><a class="menu-socils__link" href="">Instagram</a></li>
+                    <li class="item"><a class="menu-socils__link" href="">Facebook</a></li>
+                    <li class="item"><a class="menu-socils__link" href="">Twitter</a></li>
+                    <li class="item"><a class="menu-socils__link" href="">Linkedin</a></li>
+                </ul>
+            </div>
+    
         </nav>
-        <ul class="header-contacts">
-            <li class="item">
-                <div class="header-contacts__item">
-                    <svg class="header-contacts__icon" width="16" height="12">
-                        <use href="./images/contacts.svg#envelope"></use>
-                    </svg>
-                    <a href="mailto:info@devstudio.com" class="header-contacts__link">info@devstudio.com</a>
-                </div>
-            </li>
-            <li class="item">
-                <div class="header-contacts__item">
-                    <svg class="header-contacts__icon" width="10" height="16">
-                        <use href="./images/contacts.svg#smartphone"></use>
-                    </svg>
-                    <a href="tel:+380961111111" class="header-contacts__link">+38 096 111 11 11</a>
-                </div>
-            </li>
-        </ul>
+    
     </header>
     <main>
         <div class="conteiner">
@@ -73,7 +98,9 @@
                             <li class="card">
                                 <a class="card__link" href="">
                                     <div class="card__image">
-                                        <img src="./images/Технокряк.jpg" alt="Ноутбук з картками членів команди" width="370">
+                                        <img 
+                                        srcset="./images/mobile/Technocrack_450x294.webp 1x, ./images/mobile/Technocrack_450x294@2x.webp 2x"
+                                        src="./images/mobile/Technocrack_450x294.webp" alt="Ноутбук з картками членів команди">
                                         <p class="card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                             дозволить відвідувачу отримати
                                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -87,7 +114,9 @@
                             <li class="card">
                                 <a class="card__link" href="">
                                     <div class="card__image">
-                                        <img src="./images/Постер.jpg" alt="Постер до баскетбольної гри" width="370">
+                                        <img
+                                        srcset="./images/mobile/Basketball_450x294.webp 1x, ./images/mobile/Basketball_450x294@2x.webp 2x"
+                                        src="./images/mobile/Basketball_450x294.webp" alt="Постер до баскетбольної гри">
                                         <p class="card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                             дозволить відвідувачу отримати
                                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -102,7 +131,9 @@
                             <li class="card">
                                 <a class="card__link" href="">
                                     <div class="card__image">
-                                        <img src="./images/Ресторан_морської_їжі.jpg" alt="Лого ресторана з назвою та зображенням риби" width="370">
+                                        <img
+                                        srcset="./images/mobile/Seafood_450x294.webp 1x, ./images/mobile/Seafood_450x294@2x.webp 2x"
+                                        src="./images/mobile/Seafood_450x294.webp" alt="Лого ресторана з назвою та зображенням риби">
                                         <p class="card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                             дозволить відвідувачу отримати
                                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -117,7 +148,9 @@
                             <li class="card">
                                 <a class="card__link" href="">
                                     <div class="card__image">
-                                        <img src="./images/Навушники_проект_прайм.jpg" alt="Чорні навушники" width="370">
+                                        <img
+                                        srcset="./images/mobile/Headphones_450x294.webp 1x, ./images/mobile/Headphones_450x294@2x.webp 2x"
+                                        src="./images/mobile/Headphones_450x294.webp" alt="Чорні навушники">
                                         <p class="card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                             дозволить відвідувачу отримати
                                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -132,7 +165,9 @@
                             <li class="card">
                                 <a class="card__link" href="">
                                     <div class="card__image">
-                                        <img src="./images/Проєкт_коробки.jpg" alt="Дві невеликі коробки" width="370">
+                                        <img
+                                        srcset="./images/mobile/Boxes_450x294.webp 1x, ./images/mobile/Boxes_450x294@2x.webp 2x"
+                                        src="./images/mobile/Boxes_450x294.webp" alt="Дві невеликі коробки">
                                         <p class="card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                             дозволить відвідувачу отримати
                                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -147,7 +182,9 @@
                             <li class="card">
                                 <a class="card__link" href="">
                                     <div class="card__image">
-                                    <img src="./images/Натхнення_без_меж.jpg" alt="Темний монітор з зображенням карти світу" width="370">
+                                    <img
+                                    srcset="./images/mobile/Monitor_450x294.webp 1x, ./images/mobile/Monitor_450x294@2x.webp 2x"
+                                    src="./images/mobile/Monitor_450x294.webp" alt="Темний монітор з зображенням карти світу">
                                         <p class="card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                             дозволить відвідувачу отримати
                                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -162,7 +199,9 @@
                             <li class="card">
                                 <a class="card__link" href="">
                                     <div class="card__image">
-                                        <img src="./images/Обмежене_видання.jpg" alt="Розгорнутий журнал" width="370">
+                                        <img
+                                        srcset="./images/mobile/Magazin_450x294.webp 1x, ./images/mobile/Magazin_450x294@2x.webp 2x"
+                                        src="./images/mobile/Magazin_450x294.webp" alt="Розгорнутий журнал">
                                         <p class="card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                             дозволить відвідувачу отримати
                                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -177,7 +216,9 @@
                             <li class="card">
                                 <a class="card__link" href="">
                                     <div class="card__image">
-                                        <img src="./images/Проєкт_лаб.jpg" alt="Білий лейбл з назвою" width="370">
+                                        <img
+                                        srcset="./images/mobile/LabelTag_450x294.webp 1x, ./images/mobile/LabelTag_450x294@2x.webp 2x"
+                                        src="./images/mobile/LabelTag_450x294.webp" alt="Білий лейбл з назвою">
                                         <p class="card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                             дозволить відвідувачу отримати
                                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -192,7 +233,9 @@
                             <li class="card">
                                 <a class="card__link" href="">
                                     <div class="card__image">
-                                        <img src="./images/Зростаючий_бізнес.jpg" alt="Ноутбук з відкритим додатком на екрані" width="370">
+                                        <img
+                                        srcset="./images/mobile/Notebook_450x294.webp 1x, ./images/mobile/Notebook_450x294@2x.webp 2x"
+                                        src="./images/mobile/Notebook_450x294.webp" alt="Ноутбук з відкритим додатком на екрані">
                                         <p class="card__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                             дозволить відвідувачу отримати
                                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -273,5 +316,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
